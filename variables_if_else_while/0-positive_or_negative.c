@@ -11,21 +11,20 @@ int main(void)
 
 	srand(time(0));
 
-	n = rand() % 1000 -100;
+	n = rand() % 1000 - 100;
+
 
 	printf("The number is: %d\n", n);
 
-        if (n > 0);
-	{
+	if (n > 0);
+
+{
         	printf("Is positive\n");
-	}
-        if else (n < 0);
-        {
+} 	else if (n < 0); 
+{
                 printf("Is negative\n");
- }
-       else ();
-        {
+}	else (); 
+{
                 printf("Is zero\n");
-        {
-	return (0);
-}
+}		
+         return (0);}
