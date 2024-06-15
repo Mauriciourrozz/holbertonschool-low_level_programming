@@ -13,8 +13,9 @@ int main(void)
 
 	{
 		putchar(abecedario);
-		putchar('\n');
 		abecedario++;
 	}
+	putchar('\n');
+
 return (0);
 }
