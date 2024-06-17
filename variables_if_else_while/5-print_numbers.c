@@ -6,11 +6,11 @@
  *Return: always 0 (sucess)
  */
 int main(void)
-{	
+{
 	int Num = '0';
-	
+
 	while (Num <= '9')
-	
+
 	{
 		putchar(Num);
 		Num++;
