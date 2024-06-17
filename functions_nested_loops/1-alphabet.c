@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * main - alphabet
- *
- * Return: always 0 (sucess)
+ * print_alphabet - imprime el alfabeto en minuscula
  */
 void print_alphabet(void)
 {
