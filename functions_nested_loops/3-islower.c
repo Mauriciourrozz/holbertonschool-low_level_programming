@@ -8,17 +8,14 @@
 
 int _islower(int c)
 {
-	int min = 1;
-	int may = 0;
 
 		if (c <= 90 && c >= 65)
 		{
-			_putchar(may);
+			return (1);
 		}
 		else
 		{
-			_putchar(min);
+			return (0);
 		}
 
-	return (0);
 }
