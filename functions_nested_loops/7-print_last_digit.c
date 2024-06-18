@@ -5,17 +5,19 @@
  * @n: es el ulimo digito
  * Return: 0
  */
-int print_last_digit(int r)
+int print_last_digit(int n)
 {
-	if (r % 10)
+	int ult = n % 10;
+	int ultneg = n * -1;
+
+	if (ult >= 0)
 	{
-		_putchar(r);
-		return (r);
+		_putchar(ult);
+		return (ult);
 	}
 	else
 	{
-		_putchar(r);
-		return (0);
+		_putchar(ultneg);
+		return (ultneg);
 	}
-
 }
