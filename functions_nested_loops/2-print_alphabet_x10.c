@@ -1,22 +1,25 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10: Imprime el alfabeto
+ * print_alphabet_x10 - Imprime el alfabeto
  *
  * Return: 0
  */
 void print_alphabet_x10(void)
 {
 	char abc = 'a';
-	int linea = 0;
+	int linea = 1;
 
-		if (abc <= 'z')
+
+		for (linea = 1 ; linea <= 10 ; linea++)
 		{
-			_putchar(abc);
-			abc++;
-		}
 
-		for (linea = 0 ; linea <= 10 ; linea++)
-	
-	_putchar('\n');
+			for (abc = 'a' ; abc <= 'z' ; abc++)
+			{
+				_putchar(abc)
+
+			}
+			_putchar('\n');
+
+		}
 }
