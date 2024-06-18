@@ -11,7 +11,7 @@ int _islower(int c)
 	int min = 1;
 	int may = 0;
 
-		if (c <= 'z' && c >= 'a')
+		if (c <= 90 && c >= 65)
 		{
 			_putchar(may);
 		}
