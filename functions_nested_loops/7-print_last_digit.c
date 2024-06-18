@@ -5,11 +5,11 @@
  * @n: es el ulimo digito
  * Return: 0
  */
-int print_last_digit(int n)
+int print_last_digit(int r)
 {
-	if (n % 10)
+	if (r % 10)
 	{
-		return (n);
+		return (r);
 	}
 	else
 	{
