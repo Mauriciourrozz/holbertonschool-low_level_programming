@@ -14,7 +14,7 @@ void rev_string(char *s)
 	{
 	}
 
-	for (aux = 0; aux < largo / 2 - 1; aux++)
+	for (aux = 0; aux < largo / 2; aux++)
 	{
 		cambio = s[aux];
 		s[aux] = s[largo - aux - 1];
