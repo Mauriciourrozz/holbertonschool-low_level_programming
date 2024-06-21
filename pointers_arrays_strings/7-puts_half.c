@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- *
+ * puts_half - imprime la mitad de la cadena
+ * @str: cadena
  */
 void puts_half(char *str)
 {
@@ -14,16 +15,16 @@ void puts_half(char *str)
 	if (n % 2 == 0)
 		a = n / 2;
 
-	else 
+	else
 	{
 		a = (n - 1) / 2;
 		a++;
 	}
-	
+
 	for (; a < n; a++)
 	{
 		_putchar(str[a]);
 	}
-	_putchar('\n');	
-	
+	_putchar('\n');
+
 }
