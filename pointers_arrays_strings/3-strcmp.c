@@ -6,21 +6,15 @@
  * @s2: otra cadena
  * Return: 0
  */
-int _strcmp(char *s1, char *s2)
-{
-	int a;
+int _strcmp(char *s1, char *s2) {
+    int i = 0;
 
-	for (a = 0; s1[a] != '\0'; a++)
-	{
-	}
-	for (; s2[a] != '\0'; a++)
-	{
-		if (s1[a] != s2[a])
-		{
-			a = (s1[a] > s2[a]) ? 1 : -1;
-			break;
-		}
-	}
-	return (a);
+    while (s1[i] == s2[i]) {
+        if (s1[i] == '\0')
+            return 0;
+        i++;
+    }
 
+    return s1[i] - s2[i];
 }
+
