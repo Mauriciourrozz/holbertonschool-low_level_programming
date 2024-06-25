@@ -1,20 +1,37 @@
 #include "main.h"
 
 /**
+ * _atoi - convierte una string a integer
  *
+ * @s: s
+ *
+ * Return: 0
  */
 int _atoi(char *s)
 {
-	int signo;
-	int cantidad;
-	int i; /* hayo la cant de num*/
+	int x = 0;
+	int i = 0;
+	int simb = -1;
+	int res = 0;
 
+	while (s[i] != '\0')
+	{
+		if (s[i] == '-')
+			simb *= -1;
 
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			res *= 10;
+			res -= (s[i] - '0');
+			x = 1;
+		}
 
+		else if (x == 1)
+			break;
+		i++;
+	}
+	res *= simb;
 
+	return (res);
 
-
-
-	signo * = -1; /* con esto cada vez que el string encuentre un signo de menos lo multiplica por menos 1*/
-
-	if (s[i] == 
+}
