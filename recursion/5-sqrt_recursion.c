@@ -33,5 +33,5 @@ int _sqrt_recursion(int n)
 {
 	int x = 1;
 
-	return (raiz_cuad(n, x + 1));
+	return (raiz_cuad(n, x));
 }
