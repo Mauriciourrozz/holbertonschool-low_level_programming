@@ -7,14 +7,17 @@
  */
 int is_prime_number(int n)
 {
-	if (n % 2 == 0 && n % 1 == 0)
+	if (n <= 1)
+	{
+		return (0);
+	}
+	else if (n * n > n)
 	{
 		return (1);
 	}
 	else
 	{
 		return (0);
-	}
-
+	}	
 	return (n * is_prime_number(n - 1));
 }
