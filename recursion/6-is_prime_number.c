@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
- *
+ * num_prim - define que numero es primo
+ * @n: numero
+ * @i: divisor
+ * Return: 0 si no es primo y 1 si si lo es
  */
 int num_prim(int n, int i)
 {
