@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
+ * main - empieza el programa
+ * @argc: cuenta la cantidad de argumentos
+ * @argv: argumentos
+ * Return: 0
  *
  */
 int main(int argc, char **argv)
