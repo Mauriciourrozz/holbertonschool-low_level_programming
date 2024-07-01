@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	if (argc != 3)
+	if (argc != 3) /* si es distinto de 3 imprime error, 3 porque espera dos argumentos y ademas de los dos argumentos esta el nombre del programa (argv[0])*/
 	{
 		printf("Error\n");
 		return (1);
