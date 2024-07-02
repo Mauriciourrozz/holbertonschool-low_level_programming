@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * alloc_grid - devuelve un puntero a una matriz
  * @width: ancho de una cadena
@@ -10,6 +11,7 @@ int **alloc_grid(int width, int height)
 {
 	int **grid;
 	int a;
+	int b;
 
 	if (width <= 0)
 	{
@@ -20,17 +22,20 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	grid = malloc(width * sizeof(int));
-
+	grid = malloc(height * sizeof(int*));
 	if (grid == NULL)
 	{
 		return (NULL);
 	}
 
-	for (a = 0; a < width; a++)
+	for (a = 0; a < height; a++)
 	{
-		grid[a] = malloc(height * sizeof(int));
+		for (b = 0; b < height; b++)
+		{
+		grid[a] = malloc(width * sizeof(int));
+		grid[a][b] = 0;
+		}
 	}
-
 	return (grid);
 }
+
