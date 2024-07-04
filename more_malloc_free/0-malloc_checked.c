@@ -13,7 +13,6 @@ void *malloc_checked(unsigned int b)
 
 	if (checked == NULL)
 	{
-		free(checked);
 		exit(98);
 	}
 	return (checked);
