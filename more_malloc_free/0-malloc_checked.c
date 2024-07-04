@@ -10,6 +10,8 @@ void *malloc_checked(unsigned int b)
 	int *checked;
 
 	checked = malloc(b * sizeof(int *));
+	
+	checked = malloc(sizeof(char) * 1024);
 
 	if (checked == NULL)
 	{
