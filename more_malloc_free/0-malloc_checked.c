@@ -8,7 +8,6 @@
 void *malloc_checked(unsigned int b)
 {
 	int *checked;
-	int i;
 
 	checked = malloc(b * sizeof(unsigned int *));
 
@@ -16,14 +15,6 @@ void *malloc_checked(unsigned int b)
 	{
 		free(checked);
 		exit(98);
-	}
-	for (i = 0; i < checked; i++)
-	{
-		if (checked == 0)
-		{
-			free(checked[i]);
-			return;
-		}
 	}
 	return (checked);
 
