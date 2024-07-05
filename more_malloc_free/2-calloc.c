@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * _calloc - Asigna memoria para un puntero
  * @nmemb: Es la serie que le queremos asignar memoria
@@ -24,6 +25,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
+
+	memset(calloc, 0, a);
 
 	return (calloc);
 }
