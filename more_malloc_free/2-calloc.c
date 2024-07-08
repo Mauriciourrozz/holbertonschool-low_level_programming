@@ -5,7 +5,7 @@
  * _calloc - Asigna memoria para un puntero
  * @nmemb: Es la serie que le queremos asignar memoria
  * @size: Es el tama√o de bytes que queremos devolver de nmemb
- * Return: el puntero a la memoria asignada
+ * Return: el puntero a la memoria asignada.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
