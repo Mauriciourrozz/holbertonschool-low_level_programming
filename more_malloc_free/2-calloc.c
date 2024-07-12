@@ -9,22 +9,23 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	size_t a;
-	int *calloc;
+	size_t totalsize;
+	char *punt;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 
-	a = nmemb * size;
+	totalsize = nmemb * size;
 
-	calloc = malloc(a);
+	punt = malloc(totalsize);
 
-	if (calloc == NULL)
+	if (punt == NULL)
 	{
 		return (NULL);
 	}
 
-	return (calloc);
+
+	return (punt);
 }
