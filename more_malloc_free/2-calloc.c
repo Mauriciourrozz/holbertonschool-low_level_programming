@@ -11,6 +11,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	size_t totalsize;
 	char *punt;
+	unsigned int a;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -25,7 +26,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-
+	for (a = 0; a < totalsize; a++)
+	{
+		punt[a] = 0;
+	}
 
 	return (punt);
 }
