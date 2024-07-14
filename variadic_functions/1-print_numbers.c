@@ -10,14 +10,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list argum;
 	unsigned int i;
-	unsigned int total;
 
 	va_start(argum, n);
 
 	for (i = 0; i < n; i++)
 	{
-		total = total + va_arg(argum, unsigned int);
-		printf("%d", total);
+		printf("%d", va_arg(argum, unsigned int));
 		if (i < n - 1 && separator != NULL)
 		{
 			printf("%s", separator);
