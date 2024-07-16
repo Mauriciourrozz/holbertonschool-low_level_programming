@@ -9,9 +9,11 @@
 int main(void)
 {
 	printf("Mi salida:\n");
-	print_all("fcsi", 3.14435, 'H', "#Cisfun", 0);
+	print_all("fcsi", 3.14435, 'H', NULL, 402);
 	printf("---------------------------------\nsalida esperada:\n");
-	printf("3.144350, H, #Cisfun, 0\n");
-	/*print_all("ceis", 'B', 3, "stSchool");*/
+/*	printf("3.144350, H, #Cisfun, 0\n");*/
+
+	printf("3.144350, H, (nil), 402\n");
+
 	return (0);
 }

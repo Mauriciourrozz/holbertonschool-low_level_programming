@@ -50,8 +50,8 @@ void print_all(const char * const format, ...)
 					aux = va_arg(argum, char *);
 					if (aux == NULL)
 					{
-						print_last(format, i);
 						printf("(nil)");
+						print_last(format, i);
 						break;
 					}
 						printf("%s", aux);
