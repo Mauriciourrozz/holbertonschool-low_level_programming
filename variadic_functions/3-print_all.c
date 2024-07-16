@@ -33,9 +33,10 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 					break;
 				}
-					printf("%s", aux);
+					printf("%s, ", aux);
 				break;
 		}
+	
 		i++;
 	}
 	va_end(argum);
