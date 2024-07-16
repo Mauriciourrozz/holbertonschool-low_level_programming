@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 #include "variadic_functions.h"
-
 /**
  * print_last - print_last
  * @format: format
@@ -13,8 +12,6 @@ void print_last(const char * const format, int i)
 	if (format[i + 1] != '\0')
 		printf(", ");
 }
-
-
 /**
  * print_all - imprime algo
  * @format: lista de argumentos
@@ -25,10 +22,7 @@ void print_all(const char * const format, ...)
 	va_list argum;
 	char *aux;
 
-
 	va_start(argum, format);
-
-	/*fcsi*/
 
 	while (format != NULL && format[i] != '\0')
 	{
@@ -54,9 +48,9 @@ void print_all(const char * const format, ...)
 						print_last(format, i);
 						break;
 					}
-						printf("%s", aux);
-						print_last(format, i);
-						break;
+					printf("%s", aux);
+					print_last(format, i);
+					break;
 		}
 		i++;
 	}
