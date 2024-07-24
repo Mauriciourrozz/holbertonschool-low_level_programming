@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _isupper - comprueba si un caracter es mayuscula
+ * @c: Caracter a comprobar si es mayuscula
  * Return: 1 si s mayuscula 0 en el caso contrario
  */
 int _isupper(int c)
