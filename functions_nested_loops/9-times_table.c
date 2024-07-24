@@ -1,38 +1,37 @@
 #include "main.h"
+
 /**
- * times_table - imprimir las tablas del 1 al 9
- * Return: Nada
- */
+*times_table - Imprime las tablas del 1 al 9
+*Return: Nada
+*/
+
 void times_table(void)
 {
-	int fila = 10;
-	int i;
-	int j;
+
+	int a;
+	int num;
 	int resultado;
 
-	for (i = 0; i < fila; i++)
+	for (a = 0; a <= 9; a++)
 	{
-		for (j = 0; j < fila; j++)
+		_putchar('0');
+
+		for (num = 1; num <= 9; num++)
 		{
-			resultado = i * j;
+			_putchar(',');
+			_putchar(' ');
+
+			resultado = a * num;
 
 			if (resultado <= 9)
-			{
 				_putchar(' ');
-				_putchar(resultado + '0');
-			}
 			else
-			{
-				_putchar(resultado / 10 + '0');
-				_putchar(resultado % 10 + '0');
-			}
-			if (j != fila - 1)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+				_putchar((resultado / 10) + '0');
+
+			_putchar((resultado % 10) + '0');
+
 		}
 		_putchar('\n');
 	}
-}
 
+}
