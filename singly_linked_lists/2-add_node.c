@@ -11,22 +11,22 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *nuevo_nodo = (list_t *)malloc(sizeof(list_t));
-
+	//creo el nuevo nodo
 	if (nuevo_nodo == NULL)
 	{
-		return (NULL);
+		return (NULL); //si falla retorno null
 	}
 
-	nuevo_nodo->str = strdup(str);
+	nuevo_nodo->str = strdup(str); //duplico str
 	if (nuevo_nodo->str == NULL)
 	{
-		free(nuevo_nodo);
+		free(nuevo_nodo); //si falla libero espacio
 		return (NULL);
 	}
 
 	nuevo_nodo->len = _strlen(str);
 
-	nuevo_nodo->next = *head;
+	nuevo_nodo->next = *head; //apunto al primer espacio para asignar valor
 	*head = nuevo_nodo;
 
 	return (nuevo_nodo);
