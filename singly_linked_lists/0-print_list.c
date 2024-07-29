@@ -12,15 +12,15 @@ size_t print_list(const list_t *h)
 	while (h != NULL)
 	{
 		if (h->str != NULL)
-		{
-			printf("%s\n", h->str);
-		}
+		{ /*h->str es para acceder al nodo e imprimir lo que queremos*/
+			printf("[%i]%s\n", h->len, h->str);
+		} /*h->len es para acceder a len en la funcion donde esta la estrucura*/
 		else
 		{
 			printf("[0] (nil)\n");
 		}
-		h = h->next;
 		counter++;
+		h = h->next;
 	}
 	return (counter);
 }
