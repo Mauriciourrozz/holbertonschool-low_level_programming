@@ -1,7 +1,10 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- *
+ * delete_dnodeint_at_index - elimina un nodo
+ * @head: head
+ * @index: index
+ * Return: 1 si se libera el espacio y -1 sino
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
@@ -43,5 +46,5 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	free(t);
 
-	return(1);
+	return (1);
 }
